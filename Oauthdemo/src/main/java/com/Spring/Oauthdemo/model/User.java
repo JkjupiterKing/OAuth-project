@@ -22,4 +22,8 @@ public class User {
     private String password;
     private String phone;
     private String address;
+    public String getEmail() {
+        return email;
+    }
+
 }

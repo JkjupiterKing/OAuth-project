@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
 import { TextField, Button, Typography, Container, Box } from "@mui/material";
-import { jwtDecode } from "jwt-decode"; // Corrected import
+import { jwtDecode } from "jwt-decode";
 import "./Style.css";
 
 const Login = () => {

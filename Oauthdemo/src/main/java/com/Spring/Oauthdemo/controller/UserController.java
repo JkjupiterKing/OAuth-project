@@ -1,20 +1,25 @@
 package com.Spring.Oauthdemo.controller;
 
-import com.Spring.Oauthdemo.repo.UserRepo;
 import com.Spring.Oauthdemo.model.User;
+import com.Spring.Oauthdemo.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/user")
+@CrossOrigin
 public class UserController {
 
     @Autowired
     private UserRepo userRepo;
 
-    @GetMapping("/user")
-    public User getUserDetails() {
-        // This is an example; you can retrieve user details from your DB or session
-        return userRepo.findById(1L).orElse(null); // Replace with proper logic
+    @PostMapping("/save")
+    public ResponseEntity<String> saveUser(@RequestBody User user) {
+        if (userRepo.findByEmail(user.getEmail()).isPresent()) {
+            return ResponseEntity.ok("User already exists");
+        }
+        userRepo.save(user);
+        return ResponseEntity.ok("User saved successfully");
     }
 }
