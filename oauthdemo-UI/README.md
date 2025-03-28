@@ -70,9 +70,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 #OAuth2 client-id and client-secret(change them with your client-id and secret, Place the below code in application.properties file in backend Springboot)
-spring.security.oauth2.client.registration.google.client-id=<Enter Client id here>
-spring.security.oauth2.client.registration.google.client-secret=<Enter Client-secret here>
+spring.security.oauth2.client.registration.google.client-id=Enter Client id here
+spring.security.oauth2.client.registration.google.client-secret=Enter Client-secret here
 
 # OAuth2 redirect URI must match the one registered in Google Developer Console
 
+(Redirect is same for all springboot project)
 spring.security.oauth2.client.registration.google.redirect-uri=http://localhost:8080/login/oauth2/code/google
