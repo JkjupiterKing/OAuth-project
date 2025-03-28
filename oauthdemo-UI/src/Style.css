@@ -1,0 +1,81 @@
+/* Login.css */
+
+body {
+  background-color: #f4f6f9;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  margin-bottom: 20px;
+}
+
+.login-button {
+  margin-top: 10px;
+  background-color: #3f51b5;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.google-login {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: 10px;
+}
+
+.google-login .google-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4285f4;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.google-login .google-btn:hover {
+  background-color: #357ae8;
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+}
