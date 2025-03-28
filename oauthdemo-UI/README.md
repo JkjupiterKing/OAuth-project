@@ -69,7 +69,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-#OAuth2 client-id and client-secret(change them with your client-id and secret, Place the below code in application.properties file in backend Springboot)
+# OAuth2 client-id and client-secret(change them with your client-id and secret, Place the below code in application.properties file in backend Springboot)
+
 spring.security.oauth2.client.registration.google.client-id=Enter Client id here
 spring.security.oauth2.client.registration.google.client-secret=Enter Client-secret here
 
